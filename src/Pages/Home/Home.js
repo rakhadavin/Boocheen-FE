@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useState } from 'react'
 import {useSelector,useDispatch} from 'react-redux';
-
+import Welcoming from '../../Components/redux/Welcoming/Welcoming';
 import Button  from 'react-bootstrap/Button';
 
 
@@ -25,11 +25,8 @@ console.log(authors_name)
 
   return (
     <div className='main-container'>
-        <div className="welcome">
-          <div className="greetings">WELCOME TO</div>
-          <div className="logos"><h1>Boocheen</h1></div>
-        </div>
-        <div className="desc">Realize Your Love</div>
+      <Welcoming />
+       
         
         <div className="main-content">
           <div className="author">
@@ -53,6 +50,10 @@ console.log(authors_name)
                   <Button variant="danger">Think it again</Button>
                 </div>
             </div>
+        </div>
+        <div className="visit-us">
+        <Button variant="outline-primary">Visit Us</Button>
+
         </div>
         <div className="copyright">
           <h3>Copyright by <p>Rakha Davin</p></h3>
